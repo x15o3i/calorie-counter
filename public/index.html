@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calorie Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calorie Tracker</h1>
+
+    <div class="summary">
+      <h2>Today's Summary</h2>
+      <p>Calories In: <span id="calories-in">0</span></p>
+      <p>Calories Out: <span id="calories-out">0</span></p>
+      <p>Net Calories: <span id="net-calories">0</span></p>
+    </div>
+
+    <div class="log-form">
+      <h2>Log Calories</h2>
+      <input type="number" id="calories-input" placeholder="Enter calories">
+      <button id="log-in-btn">Log Calories In</button>
+      <hr>
+      <input type="number" id="calories-out-input" placeholder="Enter calories burned">
+      <button id="log-out-btn">Log Calories Out</button>
+      <hr>
+      <input type="number" id="steps-input" placeholder="Enter steps taken">
+      <button id="log-steps-btn">Log Steps</button>
+    </div>
+
+    <div class="log">
+      <h2>Today's Log</h2>
+      <ul id="log-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
